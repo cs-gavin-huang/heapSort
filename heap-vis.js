@@ -1,8 +1,6 @@
 function reheap_upwards(heap, compare, swap, cur) { // 自底向上交换
     var child = cur;
 
-    // recurse down the minheap, swapping entries as needed to
-    // keep the heap property
     // 最小堆
     while (child > 0) {
         var parent = (child - 1) >> 1;
